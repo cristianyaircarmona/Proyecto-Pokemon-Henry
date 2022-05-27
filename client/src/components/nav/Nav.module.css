@@ -1,0 +1,29 @@
+
+.general{
+    height: inherit;
+    background-color: rgba(255, 0, 0, 200);
+    font-weight: bold;
+    font-size: 1.3vw;
+    
+}
+
+.img{
+        width: 310px;
+        height: 120px;
+        margin-right: 78vw;
+}
+
+.text{
+    margin-left: 100px;
+    margin-right: 10px;
+    position: absolute;
+    left: 41vw;
+    top: 8.2vw;
+}
+.texto{
+    margin-left: 100px;
+    margin-right: 10px;
+    position: absolute;
+    left: 47vw;
+    top: 8.2vw;
+}

@@ -1,0 +1,25 @@
+.general{
+    background-image: radial-gradient(circle at 76.07% 37.84%, #ffff5c 0, #f9f310 50%, #c9d100 100%);
+    padding-top: 7.5vw;
+}
+.contenedor{
+    background-color: aliceblue;
+    width: fit-content;
+    margin-left: 35vw;
+    padding: 2vw 7vw;
+    border-radius: 1.5vw;
+    text-align: left;
+    font-weight: bold;
+    
+}
+.input{
+    margin-left: 1vw;
+    border-radius: 1vw;
+}
+.btn{
+    padding: .5vw 1vw;
+    border-radius: .5vw;
+}
+.error{
+    color: red
+}

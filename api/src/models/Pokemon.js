@@ -1,21 +1,16 @@
 const { DataTypes } = require('sequelize');
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
-function* generateId (){
-  let id = 41
-  while(true){
-    yield id
-    id++
-  }
-}
-const id = generateId()
+
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('pokemon', {
-    id:{type:DataTypes.INTEGER(),primaryKey: true, defaultValue:id.next().value},
+    id:{type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true,},
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     hp: {
       type: DataTypes.INTEGER,allowNull:false
@@ -26,9 +21,9 @@ module.exports = (sequelize) => {
     height: {type: DataTypes.INTEGER, allowNull:false},
     weight: {type: DataTypes.INTEGER,allowNull:false},
     SpecialAttack: {type: DataTypes.INTEGER,allowNull:false},
-    SpecialDefense: {type: DataTypes.INTEGER, allowNull:false}
+    SpecialDefense: {type: DataTypes.INTEGER, allowNull:false},
+    img: {type:DataTypes.STRING,allowNull:false,validate:{isUrl:true}}
   },{
-    initialAutoIncrement: 41,
     freezeTableName: true, 
     timestamps: false
   });

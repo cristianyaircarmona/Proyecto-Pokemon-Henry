@@ -1,3 +1,4 @@
+/* 
 .general{
     background-color: magenta;
 }
@@ -9,4 +10,102 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    grid: 1rem;
+}
+    */
+.prueba{
+    background-image: radial-gradient(circle at 76.07% 37.84%, #ffff5c 0, #f9f310 50%, #c9d100 100%);
+    height: 1200px;
+}
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 600px;
+    margin: auto;
+    padding: 37px 0;
+    background-color: inherit;
+    display: grid;
+    grid-template-columns:5fr;
+}
+.pokemons{
+    padding-left: 7vw;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2.5rem;
+}
+.filtros{
+    position: fixed;
+    left: 3.5vw;
+    top: 6.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    text-align: start;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cargando{
+    padding: 100%;
+    background-color: inherit;
+}
+.ant{
+    font-size: 1.1rem;
+    position: absolute;
+    left: 23vw;
+    top: 11.8vw;
+    border-radius: 0.5vw;
+    padding: 6px 12px;
+    border-style: hidden;
+    background-color: #e60808;
+    color: aliceblue;
+    font-weight: bold;
+}
+.sig{
+    font-size: 1.1rem;
+    position: absolute;
+    right: 12vw;
+    top: 11.8vw;
+    border-radius: 0.5vw;
+    padding: 6px 12px;
+    border-style: hidden;
+    background-color: #e60808;
+    color: aliceblue;
+    font-weight: bold;
+}
+.buscador{
+    margin-left: 81vw;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border-style: hidden;
+    margin-top: 6px;
+    background-image: linear-gradient(95deg, #ffffff 0, #ffffff 25%, #ffffff 50%, #f7f2f3 75%, #f0e6e9 100%);
+}
+.btnbuscador{
+    padding: 10px 10px;
+    margin-left: 2px;
+    border-radius: 6px;
+    border-style: hidden;
+}
+.otro{
+    
+    display: grid;
+    grid-template-rows: 1 1fr;
+    width: max-content;
+    margin-left: 35vw;
+}
+.ant:hover{
+    background-image: radial-gradient(circle at -20.44% 56.16%, #ff004c 0, #ff0038 16.67%, #ff0022 33.33%, #ff0000 50%, #f52e00 66.67%, #e94300 83.33%, #dd5300 100%);
+    padding: 8px 14px;
+}
+.sig:hover{
+    background-image: radial-gradient(circle at 120.71% 50%, #ff004c 0, #ff0038 16.67%, #ff0022 33.33%, #ff0000 50%, #f52e00 66.67%, #e94300 83.33%, #dd5300 100%);
+    padding: 8px 14px;
+}
+.nombre{
+    margin-bottom: 1vw;
+}
+.name{
+    margin-bottom: 1vw;
+    margin-top: 1vw;
 }
